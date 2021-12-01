@@ -5,7 +5,7 @@
 This project allows the user to store simple notes with a title and text to a simple JSON format database. The project uses a vanilla Javascript front end with an Express.js/Node.js back end to store and retrieve notes.
 
 Find the deployed project at:
-[Deployed App]()
+[Deployed App](https://pacific-castle-74072.herokuapp.com/)
 
 ![License Badge](https://img.shields.io/badge/License-MIT-informational?logoColor=white&color=1CA2F1)
 
