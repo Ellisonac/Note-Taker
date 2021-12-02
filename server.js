@@ -6,8 +6,6 @@ const PORT = process.env.PORT || 3001;
 
 const app = express();
 
-// Add middleware?
-
 // Middleware for parsing JSON and urlencoded form data
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -26,6 +24,7 @@ app.get('/notes', (req, res) =>
   res.sendFile(path.join(__dirname, '/public/notes.html'))
 );
 
+// 404 page for non matched requests
 app.get('/*',(req,res) => {
   res.sendFile(path.join(__dirname,'/public/404.html'))
 })

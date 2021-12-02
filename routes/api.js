@@ -1,7 +1,7 @@
 const api = require("express").Router();
 const { readFilePromise, addNote, deleteNote } = require("../utils/utils");
 
-// Use uuid module to 
+// Use uuid module to create unique ids
 const { v1: uuidv1 } = require("uuid");
 
 const dbFile = "./db/db.json";
